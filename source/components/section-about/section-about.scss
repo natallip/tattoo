@@ -1,0 +1,112 @@
+.section-about {  
+  .section__wrap {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    @include media1200 {
+      padding-top: 100px;
+      padding-bottom: 80px;
+    }
+    @include media980 {
+      padding-top: 80px;
+      padding-bottom: 50px;
+    } 
+    @include media480 {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    } 
+  }
+  &__imgs {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    @include media980 {
+      margin-bottom: 50px;
+      justify-content: space-around;
+    } 
+    @include media768 {
+      justify-content: space-between;
+    }
+    @include media480 {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      border-top: 1px solid #f13f3f;
+      top: 0px;
+      left: 44%;
+      width: 35px; 
+      @include media980 {
+        display: none;
+      }
+    }  
+  }
+  &__img {
+    position: relative;
+    flex-shrink: 0;
+    width: 270px;
+    max-height: 400px;
+    margin-right: 20px;  
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &:last-child {
+      margin-right: 0;
+    }   
+    @include media1200 {
+      width: 220px;       
+    } 
+    @include media980 {
+      max-width: 50%;  
+      margin-right: 0;       
+    }       
+  }
+  &__imgs-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex-shrink: 0;
+    transform: rotate(-90deg) translate(50%, 50px);
+    font-size: 21px;
+    color: #787878;
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold';
+    height: 30px;
+    width: 200px;
+    @include media1200 {
+      right: -20px;
+    }
+    @include media980 {
+      display: none;
+    } 
+  }
+  .title {
+    max-width: 300px;
+  }
+  .signature {
+    text-align: right!important;
+    img {
+      display: inline-block;
+      height: 60px;
+      width: auto;      
+    }
+  }
+  .photo2 {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      border-top: 1px solid #f13f3f;
+      top: -30px;
+      left: 0px;
+      width: 35px; 
+    }
+  }
+  &__info {
+    @include media980 {
+      max-width: 500px;
+    } 
+  }
+}

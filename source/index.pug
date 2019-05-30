@@ -1,0 +1,20 @@
+extends static/pug/template
+include components/components
+
+block variables
+    - var title = 'Tattoo'
+    - var description = 'description'
+    - var keywords = 'keywords'
+
+block content
+
+    div.page__wrapper#fullpage
+        +header
+        +section-first-screen
+        +section-about
+        +section-services
+        +section-staff       
+        +section-testimonials   
+        +section-gallery    
+        +section-contacts
+        +footer

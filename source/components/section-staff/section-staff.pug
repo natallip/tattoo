@@ -1,0 +1,29 @@
+mixin section-staff
+    section.section.section-staff#section-staff
+        .container
+            .section-staff__wrap
+                h2.title Our staff 
+                button.btn(id="virwAllTeam" data-div-name="team" type="button") View all team
+            .section-staff__slider                
+                ul.staff__list#slider-staff.owl-carousel.owl-theme  
+                    each item in data.staff
+                        li.staff__item.item
+                            .staff__photo
+                                img(src="./images/" + item.photo, alt=item.name)
+                            .staff__info
+                                h4.staff__name= item.name
+                                p.staff__position= item.position
+                                ul.staff__socials    
+                                    li.staff__socials-item
+                                        a(href="#") 
+                                            +svg("facebook")
+                                    li.staff__socials-item
+                                        a(href="#") 
+                                            +svg("twitter")
+                                    li.staff__socials-item
+                                        a(href="#") 
+                                            +svg("instagram")
+                                    li.staff__socials-item
+                                        a(href="#") 
+                                            +svg("pinterest")                        
+                            

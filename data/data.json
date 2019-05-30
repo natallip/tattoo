@@ -1,0 +1,37 @@
+{
+  "services": [
+    {"icon": "cartridge", "title": "tattooing", "text": "For a premium result, at our tattoo salon we combine modern techniques with traditional ones. "},
+    {"icon": "piercing", "title": "piercing", "text": "Want some extra holes in your body? Our piercing masters will make some for you."},
+    {"icon": "ink", "title": "tattoo cover up", "text": "Got some old tattoos that you don’t find pretty? Our talented artists will cover them up for you."},
+    {"icon": "disposable", "title": "tattoo design", "text": "Nothing can beat the challenge of creating a design that initially is only in your imagination."}
+  ],
+  "staff": [
+    {"photo": "team1.jpg", "name": "Walter Evans", "position": "junior tattoo master"},
+    {"photo": "team2.jpg", "name": "Charles Wade", "position": "tattoo master, founder"},
+    {"photo": "team3.jpg", "name": "Henry Richard", "position": "tattoo master"},
+    {"photo": "team1.jpg", "name": "Walter Evans", "position": "junior tattoo master"},
+    {"photo": "team2.jpg", "name": "Charles Wade", "position": "tattoo master, founder"},
+    {"photo": "team3.jpg", "name": "Henry Richard", "position": "tattoo master"}
+  ],
+  "testimonials": [
+    {"photo": "client1.jpg", "name": "Sam Williams", "text": "I visited Dark Ink about a month ago to get a tattoo. It has a very laid-back atmosphere while also staying very professional. Everyone was very nice and welcoming. Walter is not just an awesome artist, but a pretty cool guy to hang out with."},
+    {"photo": "client2.jpg", "name": "Edwin Smith", "text": "Dark Ink is a place where you can get a high-quality tattoo, and even order a custom design based on your wishes and expectations. This is exactly what I received during my first visit to the salon, and I will certainly come here again."},
+    {"photo": "client1.jpg", "name": "Sam Williams", "text": "I visited Dark Ink about a month ago to get a tattoo. It has a very laid-back atmosphere while also staying very professional. Everyone was very nice and welcoming. Walter is not just an awesome artist, but a pretty cool guy to hang out with."},
+    {"photo": "client2.jpg", "name": "Edwin Smith", "text": "Dark Ink is a place where you can get a high-quality tattoo, and even order a custom design based on your wishes and expectations. This is exactly what I received during my first visit to the salon, and I will certainly come here again."}
+  ],
+  "gallery": [
+    {"photo": "gallery1.jpg", "name": "photo"},
+    {"photo": "gallery2.jpg", "name": "photo"},
+    {"photo": "gallery3.jpg", "name": "photo"},
+    {"photo": "gallery1.jpg", "name": "photo"},
+    {"photo": "gallery2.jpg", "name": "photo"}
+  ],
+  "works": ["i4.jpg", "i32.jpg", "i33.jpg", "i41.jpg", "i26.jpg", "i9.jpg", "i3.jpg", "i35.jpg", "i14.jpg"],
+  "contacts": [
+    {"icon": "placeholder", "name": "адрес", "text": "Санкт-Петербург, Садовая улица, 70, офис №8"},
+    {"icon": "phone", "name": "телефон", "text": "+7 (916) 226-44-22"},
+    {"icon": "mail", "name": "почта", "text": "kusnecov@gmail.com"},
+    {"icon": "skype", "name": "skype", "text": "kusnecov-v"}
+  ],
+  "socials": ["vk", "facebook", "linkedin", "instagram", "google"]  
+}

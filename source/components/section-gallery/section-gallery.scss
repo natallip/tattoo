@@ -1,0 +1,108 @@
+.section-gallery {
+  &__wrap {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    position: relative;
+    @include media980 {
+      padding-left: 0;
+    }
+    @include media480 {
+      flex-direction: column;
+    }
+    &::before {
+      position: absolute;
+      content: '';
+      border-top: 1px solid #f13f3f;
+      bottom: 35px;
+      left: 50%;
+      width: 35px; 
+      @include media980 {
+        display: none;
+      }
+    }  
+  }
+  .container {
+    padding-bottom: 0;
+  }  
+}
+
+.btn-no-bg {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: $text;
+  text-transform: uppercase;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  @include media768 {
+    margin-bottom: 40px;
+  }
+  span {
+    transition: .3s ease-in-out;  
+    margin-right: 10px;
+    font-family: 'Montserrat Regular';
+    font-size: 14px;
+  }
+  .btn__arrow {
+    transition: .3s ease-in-out; 
+    display: inline-block;    
+  }
+  svg {
+    fill: $accent;
+    width: 15px;
+    height: 15px;
+  }
+  &:hover {
+    span {
+      color: $accent;
+      margin-right: 15px;      
+    }  
+    .btn__arrow {         
+      transform: rotateX(180deg) translateY(3px);
+    }     
+  }
+}
+.gallery {
+  &__item {
+    overflow: hidden;
+  }
+  &__photo {
+    transition: .3s ease-in-out;
+  }
+  &__item:hover &__photo{
+    transform: scale(1.05);
+    opacity: .9;
+  }
+}
+#slider-gallery.owl-carousel .owl-nav {    
+  position: absolute;
+  top: 50%;
+  left: 50%;      
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;        
+  .owl-next, .owl-prev {
+    width: 40px;
+    height: 25px;
+    background: url("/images/right-arrow.svg") no-repeat center/contain;
+    transition: .3s ease-in-out; 
+    span {
+      display: none;
+    }
+    &:hover {
+      background: url("/images/right-arrow-accent.svg") no-repeat center/contain;
+    }
+  }
+  .owl-next {
+    right: 30px;    
+  }
+  .owl-prev {
+    left: 30px;       
+    transform: rotate(180deg);    
+  }
+}

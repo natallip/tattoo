@@ -1,0 +1,15 @@
+mixin section-services
+    section.section.section-services#section-services
+        .container
+            .col-l
+                h2.title What we do  
+                ul.services       
+                    each item in data.services
+                        li.services__item
+                            .services__header
+                                .services__icon
+                                    +svg(item.icon)   
+                                h3.services__title= item.title    
+                            .services__text.text= item.text    
+            .section-services__img
+                img(src="./images/home-services.png", alt="photo")

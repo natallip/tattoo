@@ -1,0 +1,64 @@
+.footer {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;    
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    @include media980 {
+      flex-direction: column;      
+    }
+    @include media480 {
+      margin-bottom: 40px;
+    }
+  }  
+  &__logo {
+    margin-right: 20px;
+    @include media980 {
+      margin-right: 0;
+      margin: 0 auto 30px;
+    }
+    @include media480 {
+      margin-bottom: 20px;
+    }
+  }
+  .navigation {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__item {
+      padding: 0 30px;
+      @include media768 {
+        padding: 5px 30px;
+      }
+    }
+    &__link {
+      font-size: 16px;
+    }       
+  }
+  &__copyright {
+    color: $gray;
+    text-align: center;    
+  }
+}
+.btn-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9;
+  width: 50px;
+  height: 50px;
+  background: $accent url("/images/arrow-up.svg") no-repeat center/20px;
+  transition: .5s all ease-in-out;
+  transform: translate3d(0,100px,0);
+  &:hover {
+    background-color: #000;
+  }
+  &.visible {
+    transform: translate3d(0,0,0);
+  }
+}

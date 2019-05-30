@@ -1,0 +1,17 @@
+mixin section-testimonials
+    section.section.section-testimonials#section-testimonials
+        .container
+            .section-testimonials__wrap
+                h2.title Testimonials                 
+            .section-testimonials__slider
+                ul.testimonials__list#slider-testimonials.owl-carousel.owl-theme    
+                    each item in data.testimonials
+                        li.testimonials__item.item
+                            .testimonials__text= item.text
+                            .testimonials__info
+                                .testimonials__photo
+                                    img(src="./images/" + item.photo, alt=item.name)
+                                .testimonials__descr    
+                                    h4.testimonials__name= item.name
+                                    .testimonials__position Client                                                   
+                            

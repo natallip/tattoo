@@ -1,0 +1,19 @@
+mixin section-contacts
+    section.section.section-contacts#section-contacts        
+        .container
+            .section-contacts__wrap            
+                .col-s
+                    +popup
+                    h2.title Get in touch
+                    p.text Have any questions? Feel free to use the contact form below to get in touch with us. We will answer you as soon as possible!
+                    form.form#formContacts(action="mail.php")                        
+                        input.form__input.form__input--name(type="text", name="name", placeholder="Your name" required)
+                        input.form__input.form__input--email(type="email", name="email", placeholder="Your email" required)
+                        input.form__input.form__input--phone(type="tel", name="phone", placeholder="Your phone" required)
+                        textarea.form__input.form__input--msg(name="message", placeholder="Your message" required)
+                        button.btn(type="submit") Send message   
+                                        
+            .section-contacts__img
+                img(src="./images/home-bottom.png", alt="photo")
+                
+        #map
